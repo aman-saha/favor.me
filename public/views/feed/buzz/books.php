@@ -146,7 +146,7 @@ else
                                                 <div class="form-group">
                                                     <h4>Post to</h4>
                                                     <div class="form-group">
-                                                        <label for="sel1">Select list:</label>
+                                                        <label for="sel1">Post to:</label>
                                                         <select class="form-control" id="post_type">
                                                             <option>Public</option>
                                                             <option>Friends</option>
