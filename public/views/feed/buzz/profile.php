@@ -138,9 +138,13 @@ else
                                                           <label for="sel1">Select list:</label>
                                                           <select class="form-control" id="category">
                                                             <option value="academics">Academics</option>
+                                                            <option value="books">Books</option>
+                                                            <option value="clothing">Clothing</option>
+                                                            <option value="cosmetics">Cosmetics</option>
                                                             <option value="electronics">Electronics</option>
+                                                            <option value="food">Food</option>
+                                                            <option value="movies">Movies</option>
                                                             <option value="sports">Sports</option>
-                                                            <option>4</option>
                                                           </select>
                                                         </div>
                                                     </div>

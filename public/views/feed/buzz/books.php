@@ -135,12 +135,9 @@ else
                                                     <div class="form-group">
                                                         <h4>Category</h4>
                                                         <div class="form-group">
-                                                          <label for="sel1">Select list:</label>
+                                                          <label for="sel1">Select Category:</label>
                                                           <select class="form-control" id="category">
-                                                            <option value="academics">Academics</option>
-                                                            <option value="electronics">Electronics</option>
-                                                            <option value="sports">Sports</option>
-                                                            <option>4</option>
+                                                            <option value="books">Books</option>
                                                           </select>
                                                         </div>
                                                     </div>

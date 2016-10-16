@@ -138,9 +138,6 @@ else
                                                           <label for="sel1">Select list:</label>
                                                           <select class="form-control" id="category">
                                                             <option value="academics">Academics</option>
-                                                            <option value="electronics">Electronics</option>
-                                                            <option value="sports">Sports</option>
-                                                            <option>4</option>
                                                           </select>
                                                         </div>
                                                     </div>
