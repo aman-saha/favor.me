@@ -39,16 +39,29 @@ else
     <script src="../assets/js/morph-btn/jquery-2.1.1.js"></script>
     <script src="../assets/js/dropzone.js"></script>
     <script src="../assets/js/morph-btn/modernizr.js"></script>
+    <style type="text/css">
+            #search_text{
+                margin-left: 5%;   
+                width: 130px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+            }
+            #search_text:focus {
+                width: 75%;
+            }
+    </style>
 </head>
 
 <body class = "buzz-feed">
     <div class="layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="header mdl-layout__header mdl-color--white mdl-color--grey-100 mdl-color-text--grey-600" id="top-nav-bar">
             <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">Buzz</span>
-                <div class="mdl-layout-spacer"></div>
+                <span class="mdl-layout-title">Home</span>
+                <div class="mdl-layout-spacer"><input type="text" id="search_text" placeholder="Search..."></div>
+                <br/>
+                <br/><br/><br/>
+                <div id="search_result"></div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-
                 </div>
                 <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
                     <i class="material-icons">more_vert</i>
@@ -65,14 +78,6 @@ else
                 <img src="../assets/images/user.jpg" class="avatar">
                 <div class="avatar-dropdown">
                     <span>Welcome <?php echo "$current_username"; ?></span>
-                    <div class="mdl-layout-spacer"></div>
-                    <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                        <i class="material-icons" role="presentation">arrow_drop_down</i>
-                        <span class="visuallyhidden">Accounts</span>
-                    </button>
-                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-                        <li class="mdl-menu__item"><i class="material-icons">add</i>Change Profile Picture</li>
-                    </ul>
                 </div>
             </header>
              <nav class="navigation mdl-navigation mdl-color--white-grey-800">

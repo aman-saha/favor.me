@@ -70,19 +70,11 @@
     </style>
     <body>
       <ul class="topnav">
-        <li class="right">
-          <a href="#">Tag</a>
+        <li class="right" style="font-size: 100%;">
+          <a href="#">favor.me</a>
         </li>
-        <li>
-         <a class="active" href="#home">Home</a>
-       </li>
-       <li>
-        <a href="#news">
-          News
-        </a>
-      </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a href="#contact">About Us</a>
       </li>
     </ul>
 

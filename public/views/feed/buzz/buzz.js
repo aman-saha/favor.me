@@ -33,4 +33,27 @@ $(document).ready(function(){
 			alert(error);
 		}
 	});
+
+	$(document).keyup(function(){  
+      $('#search_text').keyup(function(){  
+         var txt = $(this).val(); 
+         if(txt != '')  
+         {  
+            $.ajax({  
+               url:"fetch.php",  
+               method:"POST",  
+               data:{search:txt},  
+               dataType:"text",  
+               success:function(data) 
+               {  
+                  //alert(data);
+                  $('#search_result').html(data);  
+              }  
+          });  
+        }  
+        else if($(this).val() === ''){
+            $('#search_result').html('');
+        }
+    });  
+  });  
 });	
