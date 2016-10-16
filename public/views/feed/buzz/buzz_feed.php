@@ -11,7 +11,7 @@
     $current_user_id=$_SESSION['current_user_id'];
   }
 else
-  redirect_to("../reg/index.php");
+  redirect_to("../../reg/index.php");
 ?>
 <?php
   $output='<div id="add_buzz"></div>';
@@ -30,7 +30,7 @@ else
                         <img src="../assets/images/user.jpg" class="comment__avatar">
                         <div class="author__bio">
                             <strong>'.$current_username.'</strong>
-                            <span>2 days ago</span>
+                            <span>'.$row['start_time'].'</span>
                         </div>                            
                     </header>
                 </div>
@@ -40,7 +40,7 @@ else
                
                 <div class="mdl-card__actions mdl-card--border">
                     <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$row['start_date'].'</div>
-                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$row['end_date'].'</div>
+                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$row['category'].'</div>
                 </div>
             </div>';
       }
@@ -52,7 +52,7 @@ else
                         <img src="../assets/images/user.jpg" class="comment__avatar">
                         <div class="author__bio">
                             <strong>'.$current_username.'</strong>
-                            <span>2 days ago</span>
+                            <span>'.$row['start_time'].'</span>
                         </div>                            
                     </header>
                 </div>
@@ -64,7 +64,7 @@ else
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                     <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$row['start_date'].'</div>
-                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$row['end_date'].'</div>
+                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$row['category'].'</div>
                 </div>
             </div>';
       }

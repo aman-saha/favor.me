@@ -11,7 +11,7 @@
     $current_user_id=$_SESSION['current_user_id'];
   }
 else
-  redirect_to("../reg/index.php");
+  redirect_to("../../reg/index.php");
 ?>
 <html lang="en">
 

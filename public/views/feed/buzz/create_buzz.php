@@ -11,7 +11,7 @@
     $current_user_id=$_SESSION['current_user_id'];
   }
 else
-  redirect_to("../reg/index.php");
+  redirect_to("../../reg/index.php");
 ?>
 <?php
 
@@ -20,11 +20,11 @@ else
   $category = $_POST['category'];
   $post_type = $_POST['post_type'];
   $start_date = date("Y-m-d");
-  $start_time = date("h:i:sa");
-  $image = $_POST['image'] ;
+  $start_time = date("h:ia");
+  $image = $_POST['image'];
   if($image == "#")
   {
-    $query = "INSERT INTO event(user_id,title,description,category,post_type,start_date,start_time,image_url) VALUES($current_user_id,'$post_title','$post_description','$category','$post_type','$start_date','$end_date','$start_time','$end_time','$image')";
+    $query = "INSERT INTO event(user_id,title,description,category,post_type,start_date,start_time,image_url) VALUES($current_user_id,'$post_title','$post_description','$category','$post_type','$start_date','$start_time','$image')";
     $result = mysqli_query($connection,$query);
     if($result)
     {
@@ -44,7 +44,7 @@ else
                
                 <div class="mdl-card__actions mdl-card--border">
                     <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$start_date.'</div>
-                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$end_date.'</div>
+                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$category.'</div>
                 </div>
             </div>';
     }
@@ -73,7 +73,7 @@ else
     //print $success ? $file : 'Unable to save the file.';
     if($success)
     {
-       $query = "INSERT INTO event(user_id,title,description,category,post_type,start_date,start_time,image_url) VALUES($current_user_id,'$post_title','$post_description','$category','$post_type','$start_date','$end_date','$start_time','$end_time','$image')";
+       $query = "INSERT INTO event(user_id,title,description,category,post_type,start_date,start_time,image_url) VALUES($current_user_id,'$post_title','$post_description','$category','$post_type','$start_date','$start_time','$image')";
         $result = mysqli_query($connection,$query);
         if($result)
         {
@@ -95,7 +95,7 @@ else
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                     <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$start_date.'</div>
-                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$end_date.'</div>
+                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$category.'</div>
                 </div>
             </div>';
         }
