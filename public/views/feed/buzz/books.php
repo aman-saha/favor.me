@@ -120,12 +120,12 @@ else
                                         <div class="section__text mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid--no-spacing">
                                             <div class="section__text mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone flex-dis-col buzz-upper">
                                                 <form action="#">
-                                                    <div class="mdl-textfield mdl-js-textfield buzz_title">
-                                                        <label class="mdl-textfield__label buzz_title_label" for="sample5">Title...</label>
+                                                   <div class="mdl-textfield mdl-js-textfield buzz_title">
+                                                        <label class="mdl-textfield__label buzz_title_label" for="sample5">Ask or Give away...</label>
                                                         <textarea class="mdl-textfield__input" type="text" rows="1" id="post_title"></textarea>
                                                     </div>
                                                     <div class="mdl-textfield mdl-js-textfield buzz_des">
-                                                        <label class="mdl-textfield__label buzz_des_label" for="sample5">Description...</label>
+                                                        <label class="mdl-textfield__label buzz_des_label" for="sample5">How can one get it? Say about it...</label>
                                                         <textarea class="mdl-textfield__input" type="text" rows="4" id="post_description"></textarea>
                                                     </div>
                                                 </form>
