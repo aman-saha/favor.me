@@ -53,11 +53,11 @@ function checkStatus(status)
 	}
 	else if(data=="Success Login")
 	{
-		$(location).attr('href', 'home.php');
+		$(location).attr('href', '../feed/buzz/index.php');
 	}
 	else if(data=="Success Signup")
 	{
-		$(location).attr('href', 'home.php');
+		$(location).attr('href', '../feed/buzz/index.php');
 	}
 	else if(data=="Wrong Signup")
 	{

@@ -17,10 +17,8 @@ else
 
   $post_title = $_POST['post_title'];
   $post_description = $_POST['post_description'];
-  $start_date = $_POST['start_date'];
-  $end_date = $_POST['end_date'];
-  $start_time = $_POST['start_time'];
-  $end_time = $_POST['end_time'];
+  $category = $_POST['category'];
+  $post_type = $_POST['post_type']
   $image = $_POST['image'] ;
   if($image == "#")
   {
@@ -43,8 +41,8 @@ else
                 </div>
                
                 <div class="mdl-card__actions mdl-card--border">
-                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$start_date.'</div>
-                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$end_date.'</div>
+                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$category.'</div>
+                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$post_type.'</div>
                 </div>
             </div>';
     }
@@ -94,8 +92,8 @@ else
                     <img src="/cambuzz-new/public/buzz/'.$image_url.'" width="100%" height="100%" border="0" alt="">
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$start_date.'</div>
-                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$end_date.'</div>
+                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$category.'</div>
+                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$post_type.'</div>
                 </div>
             </div>';
         }

@@ -39,8 +39,8 @@ else
                 </div>
                
                 <div class="mdl-card__actions mdl-card--border">
-                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$row['start_date'].'</div>
-                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$row['end_date'].'</div>
+                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$row['category'].'</div>
+                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$row['post_type'].'</div>
                 </div>
             </div>';
       }
@@ -63,8 +63,8 @@ else
                     <img src="/cambuzz-new/public/buzz/'.$row['image_url'].'" width="100%" height="100%" border="0" alt="">
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$row['start_date'].'</div>
-                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$row['end_date'].'</div>
+                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$row['category'].'</div>
+                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$row['post_type'].'</div>
                 </div>
             </div>';
       }
