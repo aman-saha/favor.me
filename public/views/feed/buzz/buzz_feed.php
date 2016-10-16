@@ -18,8 +18,10 @@ else
   $category = $_GET['category'];
   if($category=="all")
     $query = "SELECT * FROM event ORDER BY id DESC";
+  else if($category=="personal")
+    $query = "SELECT * FROM event WHERE user_id='$current_user_id' ORDER BY id DESC";
   else
-    $query = "SELECT * FROM event WHERE category='$category' ORDER BY id DESC";
+    $query = "SELECT * FROM event WHERE category = '$category' ORDER BY id DESC";
   $result = mysqli_query($connection,$query);
   if($result)
   {

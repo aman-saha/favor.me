@@ -45,7 +45,7 @@ else
     <div class="layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="header mdl-layout__header mdl-color--white mdl-color--grey-100 mdl-color-text--grey-600" id="top-nav-bar">
             <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">Academics</span>
+                <span class="mdl-layout-title">Books</span>
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
 
@@ -235,7 +235,7 @@ else
 </script>
 <script type="text/javascript">
     $(document).ready(function(){
-        $("#main-content").load("buzz_feed.php?category=academics");
+        $("#main-content").load("buzz_feed.php?category=books");
       });
 </script>
 <script src="buzz.js"></script>

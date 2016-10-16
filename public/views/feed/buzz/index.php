@@ -45,7 +45,7 @@ else
     <div class="layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="header mdl-layout__header mdl-color--white mdl-color--grey-100 mdl-color-text--grey-600" id="top-nav-bar">
             <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">Home</span>
+                <span class="mdl-layout-title">Buzz</span>
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
 
@@ -54,8 +54,8 @@ else
                     <i class="material-icons">more_vert</i>
                 </button>
                 <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-                    <li class="mdl-menu__item">About</li>
-                    <li class="mdl-menu__item">Contact</li>                    
+                    <a href="profile.php"><li class="mdl-menu__item">Profile</li></a>
+                    <a href="#"><li class="mdl-menu__item">Settings</li></a>                   
                     <a href="../../reg/logout.php"><li class="mdl-menu__item">Logout</li></a>
                 </ul>
             </div>
@@ -75,11 +75,32 @@ else
                     </ul>
                 </div>
             </header>
-            <nav class="navigation mdl-navigation mdl-color--white-grey-800">
-                <a class="mdl-navigation__link" href="academics.php"><i class="material-icons">notifications_active</i>Academics</a>         
+             <nav class="navigation mdl-navigation mdl-color--white-grey-800">
+                <a class="mdl-navigation__link" href="index.php"><i class="material-icons">notifications_active</i>Home</a>              
             </nav>
             <nav class="navigation mdl-navigation mdl-color--white-grey-800">
-                <a class="mdl-navigation__link" href="electronics.php"><i class="material-icons">notifications_active</i>Electronics</a>           
+                <a class="mdl-navigation__link" href="academics.php"><i class="material-icons">notifications_active</i>Academics</a>              
+            </nav>
+            <nav class="navigation mdl-navigation mdl-color--white-grey-800">
+                <a class="mdl-navigation__link" href="books.php"><i class="material-icons">notifications_active</i>Books</a>              
+            </nav>
+            <nav class="navigation mdl-navigation mdl-color--white-grey-800">
+                <a class="mdl-navigation__link" href="cosmetics.php"><i class="material-icons">notifications_active</i>Cosmetics</a>              
+            </nav>
+            <nav class="navigation mdl-navigation mdl-color--white-grey-800">
+                <a class="mdl-navigation__link" href="clothing.php"><i class="material-icons">notifications_active</i>Clothing</a>              
+            </nav>
+            <nav class="navigation mdl-navigation mdl-color--white-grey-800">
+                <a class="mdl-navigation__link" href="food.php"><i class="material-icons">notifications_active</i>Food</a>              
+            </nav>
+            <nav class="navigation mdl-navigation mdl-color--white-grey-800">
+                <a class="mdl-navigation__link" href="movies.php"><i class="material-icons">notifications_active</i>Movies</a>              
+            </nav>
+            <nav class="navigation mdl-navigation mdl-color--white-grey-800">
+                <a class="mdl-navigation__link" href="sports.php"><i class="material-icons">notifications_active</i>Sports</a>              
+            </nav>
+             <nav class="navigation mdl-navigation mdl-color--white-grey-800">
+                <a class="mdl-navigation__link" href="other.php"><i class="material-icons">notifications_active</i>Other Accessories</a>              
             </nav>
         </div>
         <main class="mdl-layout__content mdl-color--grey-100">
