@@ -15,7 +15,11 @@ else
 ?>
 <?php
   $output='<div id="add_buzz"></div>';
-  $query = "SELECT * FROM event ORDER BY id DESC";
+  $category = $_GET['category'];
+  if($category=="all")
+    $query = "SELECT * FROM event ORDER BY id DESC";
+  else
+    $query = "SELECT * FROM event WHERE category='$category' ORDER BY id DESC";
   $result = mysqli_query($connection,$query);
   if($result)
   {
