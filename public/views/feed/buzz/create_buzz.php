@@ -18,11 +18,13 @@ else
   $post_title = $_POST['post_title'];
   $post_description = $_POST['post_description'];
   $category = $_POST['category'];
-  $post_type = $_POST['post_type']
+  $post_type = $_POST['post_type'];
+  $start_date = date("Y-m-d");
+  $start_time = date("h:i:sa");
   $image = $_POST['image'] ;
   if($image == "#")
   {
-    $query = "INSERT INTO event(user_id,title,description,start_date,end_date,start_time,end_time,image_url) VALUES($current_user_id,'$post_title','$post_description','$start_date','$end_date','$start_time','$end_time','$image')";
+    $query = "INSERT INTO event(user_id,title,description,category,post_type,start_date,start_time,image_url) VALUES($current_user_id,'$post_title','$post_description','$category','$post_type','$start_date','$end_date','$start_time','$end_time','$image')";
     $result = mysqli_query($connection,$query);
     if($result)
     {
@@ -41,8 +43,8 @@ else
                 </div>
                
                 <div class="mdl-card__actions mdl-card--border">
-                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$category.'</div>
-                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$post_type.'</div>
+                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$start_date.'</div>
+                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$end_date.'</div>
                 </div>
             </div>';
     }
@@ -71,7 +73,7 @@ else
     //print $success ? $file : 'Unable to save the file.';
     if($success)
     {
-      $query = "INSERT INTO event(user_id,title,description,start_date,end_date,start_time,end_time,image_url) VALUES($current_user_id,'$post_title','$post_description','$start_date','$end_date','$start_time','$end_time','$image_url')";
+       $query = "INSERT INTO event(user_id,title,description,category,post_type,start_date,start_time,image_url) VALUES($current_user_id,'$post_title','$post_description','$category','$post_type','$start_date','$end_date','$start_time','$end_time','$image')";
         $result = mysqli_query($connection,$query);
         if($result)
         {
@@ -92,8 +94,8 @@ else
                     <img src="/cambuzz-new/public/buzz/'.$image_url.'" width="100%" height="100%" border="0" alt="">
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$category.'</div>
-                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$post_type.'</div>
+                    <div class="mdl-color-text--cyan-600 buzz_date buzz_start_date">'.$start_date.'</div>
+                    <div class="mdl-color-text--red-600 buzz_date buzz_end_date">'.$end_date.'</div>
                 </div>
             </div>';
         }
