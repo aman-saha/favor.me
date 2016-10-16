@@ -1,0 +1,17 @@
+form{
+	margin-top: 1em;
+}
+nav{
+	background-color: #004D40;
+}
+footer.page-footer{
+	background-color: #004D40;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.page-head-title{
+	margin-top: 1em;
+	text-align: center;
+}

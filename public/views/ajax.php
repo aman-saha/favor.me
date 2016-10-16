@@ -1,0 +1,12 @@
+$(document).ready(function(){  
+        $('#pupload').click(function(){  
+          $.ajax({
+            url:"fetch_feed.php",  
+            method:"post",
+            success:function(data) 
+              {  
+                addContent(data);  
+              }  
+          });
+        });  
+      });
