@@ -28,6 +28,8 @@ else
     while($row = mysqli_fetch_assoc($result))
     {
       $image_url = $row['image_url'];
+      $user_id = $row['user_id'];
+      $username = find_username_by_id($user_id,$connection);
       if($image_url=="#")
       {
         $output.= '<div class="section__text mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col  mdl-grid--no-spacing">
@@ -35,7 +37,7 @@ else
                     <header class="author__header">
                         <img src="../assets/images/user.jpg" class="comment__avatar">
                         <div class="author__bio">
-                            <strong>'.$current_username.'</strong>
+                            <strong>'.$username.'</strong>
                             <span>'.$row['start_time'].'</span>
                         </div>                            
                     </header>
@@ -57,7 +59,7 @@ else
                     <header class="author__header">
                         <img src="../assets/images/user.jpg" class="comment__avatar">
                         <div class="author__bio">
-                            <strong>'.$current_username.'</strong>
+                            <strong>'.$username.'</strong>
                             <span>'.$row['start_time'].'</span>
                         </div>                            
                     </header>
